@@ -18,8 +18,27 @@ def order(sentence):
         return sentenceList
 
     def upsetList(sentenceList):
-        import random
-        random.shuffle(sentenceList)
+        import random, copy
+        basic = copy.deepcopy(sentenceList)
+        while True:
+            random.shuffle(sentenceList)
+            orderList = []
+            same = True
+            for i in range(0, len(basic)):
+                if basic[i] == sentenceList[i]:
+                    orderList.append(True)
+                else:
+                    orderList.append(False)
+            for i in orderList:
+                if i == False:
+                    same = False
+                    break
+                else:
+                    pass
+            if same == True:
+                continue
+            else:
+                break
         return sentenceList
 
     def outputList(list):

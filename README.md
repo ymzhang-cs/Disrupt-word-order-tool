@@ -1,7 +1,7 @@
 ![](media/header.png)
 # Disrupt-word-order-tool/连词成句自动生成程序
 
-此项目用以帮助教师等人快速编写题目祸害学生。使用Python及其标准库Tkinter进行编写。
+此项目用以帮助教师等人快速编写题目祸害学生。使用Python及其标准库Tkinter进行编写。其中使用copy库进行深拷贝，使用random库打乱句子顺序
 
 ## 使用
 
@@ -19,19 +19,28 @@ pip install pyinstaller
 使用 Pyinstaller 对``` graph.py ```进行编译
 
 ```
-pyinstaller --onefile graph.py
+pyinstaller -Fw graph.py
 ```
 
 ### 使用示例
 
 #### Windows
 ![](media/example1.gif)
+（0.1.0版本图。0.2.0版本图待更。）
 
 #### Linux
 ![](media/example2.png)
 ![](media/example3.png)
 
 ## 版本历史
+
+* 0.2.0
+    * 增加文本框行数至5行。
+    * 修复了生成时会出现原句的bug。
+    * 做到了在生成句子时自动清空文本框。
+    * TODO
+        * 改进UI美观程度
+        * 添加多种打乱方式（形式），如按字母排序等、如用户按照example自行指定格式等。
 
 * 0.1.0
     * 底层代码基本完成。
