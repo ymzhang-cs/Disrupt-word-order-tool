@@ -2,11 +2,13 @@
 # Disrupt-word-order-tool/连词成句自动生成程序
 
 此项目用以帮助教师等人快速编写题目祸害学生。使用Python及其标准库Tkinter进行编写。其中使用copy库进行深拷贝，使用random库打乱句子顺序
+>已编译的```dwot.exe```: https://github.com/zymzs/Disrupt-word-order-tool/releases
 
 ## 使用
 
 * Python 3
 * pip / pip3
+
 
 ### 安装Pyinstaller
 
@@ -26,11 +28,7 @@ pyinstaller -Fw graph.py
 
 #### Windows
 ![](media/example1.gif)
-（0.1.0版本图。0.2.0版本图待更。）
-
-#### Linux
-![](media/example2.png)
-![](media/example3.png)
+![](media/example2.gif)
 
 ## 版本历史
 
