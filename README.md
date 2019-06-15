@@ -10,10 +10,11 @@
 * pip / pip3
 
 
-### 安装Pyinstaller
+### 安装所需模块
 
 ```
 pip install pyinstaller
+pip install clipboard
 ```
 
 ### 编译
@@ -31,6 +32,13 @@ pyinstaller -Fw graph.py
 ![](media/example2.gif)
 
 ## 版本历史
+
+* 0.2.6(无编译发布，请自行编译)
+    * 修复了复制时会出现引号的问题
+    * 以base64形式表示logo，并成功添加至窗口
+    * TODO
+        * 改进UI美观程度
+        * 添加多种打乱方式（形式），如按字母排序等、如用户按照example自行指定格式等。
 
 * 0.2.5
     * 添加复制按钮。
