@@ -27,7 +27,7 @@ text = tk.StringVar()
 def ordering():
     t.delete(1.0, tk.END)
     inputText = e.get()
-    orderedText = order(inputText)[0]+" ("+order(inputText)[1]+")"
+    orderedText = order.order(inputText)[0] + "({})".format(order.order(inputText)[1])
     text.set(orderedText)
     t.insert('insert', text.get())
 
